@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+html, body, ul, li, a {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #696461;
+}
+
+.cortes {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.cortes img{
+  border-radius: 30px;
+  padding: 10px;
+  width: 35vh;
+  height: 35vh;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+.cortes h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  font-size: 2.3rem;
+  /* font-family: 'allura'; */
+  color: white;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(14, 13, 13);
+  color: white;
+  height: 90px;
+  font-family: 'allura';
+}
+
+.menu a {
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.menu li {
+  margin-right: 40px;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  font-size: 3.3rem;
+  margin-left: 100px;
+  font-family: 'allura';
+}
+
+.source a{
+  color: #fff;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}

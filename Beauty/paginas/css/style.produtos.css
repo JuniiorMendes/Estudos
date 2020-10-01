@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+html, body, ul, li, a {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  /* background-image: url(/img/background.jpg); */
+  background-color: #696461;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(14, 13, 13);
+  color: white;
+  height: 90px;
+  font-family: 'allura';
+}
+
+.menu a {
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.menu li {
+  margin-right: 40px;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  font-size: 3.3rem;
+  margin-left: 100px;
+  font-family: 'allura';
+}

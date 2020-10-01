@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+html, body, ul, li, a {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #696461;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(14, 13, 13);
+  color: white;
+  height: 90px;
+  font-family: 'allura';
+}
+
+.menu a {
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.menu img a{
+  fill: #fff;
+}
+
+.menu li {
+  margin-right: 40px;
+}
+
+.menu ul{
+  display: flex;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropProdutos {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  background: black;
+  z-index: 1;
+  margin-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  height: 30%;
+  width: 130px;
+  /* display: none !important; */
+  animation: dropdown 1s ease;
+  animation-fill-mode: both;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.dropCortes{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  background: black;
+  z-index: 1;
+  margin-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px !important;
+  height: 30%;
+  width: 130px;
+  display: none !important;
+  animation: dropdown 1s ease;
+  animation-fill-mode: both;
+  border-radius: 0px 0px 10px 10px;
+}
+.dropContato {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  z-index: 1;
+  margin-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  height: 30%;
+  width: 130px;
+  display: none !important;
+  animation: dropdown 1s ease;
+  animation-fill-mode: both;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.drop {
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  background: black;
+  z-index: 1;
+  margin-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  height: 30%;
+  width: 130px;
+  display: none !important;
+  animation: dropdown 1s ease;
+  animation-fill-mode: both;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.produtos:hover .dropProdutos:hover{
+  display: block;
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
+.drop li {
+  padding: 10px;
+  margin: 0;
+}
+
+.drop.active {
+  display: flex !important;
+}
+
+.dropContato {
+  height: 100px;
+}
+
+.dropCortes {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+
+.logo {
+  font-size: 3.3rem;
+  margin-left: 100px;
+  font-family: 'allura';
+}
+
+.galeria {
+  overflow: hidden;
+  height: 88vh;
+  width: 100%;
+  /* position: relative; */
+  margin: 0 auto;
+  background-size: cover;
+  margin: 0;
+  transform: scale(1);
+}
+
+.galeria img {
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  animation: animacao 20s infinite;
+}
+
+.img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+
+.img:nth-of-type(3) {
+  animation-delay: 10s;
+}
+
+.img:nth-of-type(4) {
+  animation-delay: 15s;
+}
+
+@keyframes animacao {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.1,1.1);
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+h2 {
+  float: inline-start;
+  text-transform: uppercase;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 10px; 
+}
+
+.img2 img{
+  display: flex;
+  margin: 0 auto;
+  width: 50vw;
+  border-radius: 5px;
+  margin-bottom: 5%;
+}
+
+.img2 {
+  margin-top: 100px;
+  justify-content: center
+}
+
+.imagens {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.flex {
+  height: 350px; 
+}
+
+.imagens img {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+  background: linear-gradient(90deg,rgb(14, 13, 13), #696461);
+}
+
+.imagens img:nth-child(1) {
+  height: 300px;
+}
+
+p {
+  color: white;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.imagens img:nth-child(3) {
+  height: 300px;
+}
+
+.anime {
+  opacity: 0;
+  transform: translate3d(-50px, 0px, 0px);
+}
+
+.anime-init {
+  opacity: 1;
+  transition: 1s all ease;
+  transform: translate3d(0px, 0px, 0px);
+
+}
