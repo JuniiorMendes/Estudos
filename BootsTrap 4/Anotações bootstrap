@@ -1,0 +1,26 @@
+Grade 
+
+O que é Bootstrap
+Como utilizar, para que serve e setup.
+
+Bootstrap 4 na prática 1 e 2
+grid, espaçamento, tipografia, carousel, formulários e mais.
+
+Otimização e conclusão
+Otimize e personalize com SASS.
+
+Bootstrap é um dos maiores frameworks de css e js do mundo,
+
+No bootstrap as definições são feitas com divs, e na maioria das vezes tem que ter container e row na div pai e filho.
+
+ele é medido em 12 colunas.
+
+Col - faz a mensão entre colunas.
+
+.col- = automatico
+.col-sm- = 540px
+.col-md- = 720px
+.col-lg- = 960px
+.col-xl- = 1140px
+
+
