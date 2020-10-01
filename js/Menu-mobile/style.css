@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(28, 164, 173);
+}
+
+h1 {
+  font-size: 3.0rem;
+  /* background-color: yellow; */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  /* color: black; */
+}
+
+a:hover {
+  transition: 1s;
+  text-shadow: 2px 0px white;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  /* border-radius: 0px 0px 0px 2px; */
+  font-size: 2.0rem;
+  cursor: pointer;
+  /* background: yellow; */
+  list-style: none;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+nav {
+  font-family: monospace;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  color: white;
+}
+
+[data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  [data-menu="button"] {
+    display: flex;
+    background: #fff;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    align-items: center;
+    /* margin: 10px; */
+    z-index: 300;
+    position: relative;
+  }
+
+  [data-menu="button"]::before {
+    content: '';
+    margin-right: 4px;
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #000;
+    box-shadow: 0 4px #000, 0 -4px #000;
+    transition: 0.5s;
+  }
+
+  [data-menu="button"].ativando::before {
+    transition: 1s;
+    transform: rotate(180deg);
+  }
+
+  [data-menu="list"] {
+    transition: 1s;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 250px;
+    top: 140px;
+    height: 240px;
+    width: 450px;
+    padding: 0;
+    margin: 0;
+    background: black;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px black;
+    color: black;
+  }
+}
+
+.ativo {
+  display: flex;
+  align-items: flex-end;
+  animation: show-right 1s forwards;
+}
+
+@keyframes show-right {
+  from{
+    opacity: 1;
+    transform: translate3d(-500px, 0px, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-left {
+  from{
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(-500px, 0, 0);
+  }
+}
+

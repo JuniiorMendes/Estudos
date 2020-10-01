@@ -1,0 +1,27 @@
+li {
+    list-style: none;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 70px;
+    background-color: cadetblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-dentro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.menu-dentro li a{
+    margin-bottom: -10px;
+}
+
+
+
+
+

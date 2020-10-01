@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  font-size: 2.2rem;
+  cursor: pointer;
+  /* background: yellow; */
+  list-style: none;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+nav {
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  color: white;
+}

@@ -1,0 +1,71 @@
+body {
+    color: white;
+    background: rgb(12, 3, 31);
+}
+
+.dev a{
+    margin-right: 50px;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.dev {
+    transition: 1s;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.dev:hover {
+    transition: 1s;
+    text-shadow: 0px 0px 10px white;
+}
+
+h1 {
+    cursor: pointer;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    text-shadow: 2px 5px 2px black;
+}
+
+.azul {
+    background: blue;
+}
+
+.vermelho {
+    background: red;
+}
+
+.relogio {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ponteiros {
+    margin-bottom: 20px;
+    font-size: 200px;
+}
+
+.botao {
+    height: 50%;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    transition: 1s;
+}
+
+.botao:hover {
+    transition: 0.6s;
+    box-shadow: 0px 0px 10px white;
+}
+
+.botao:active {
+    margin-top: 10px;
+}

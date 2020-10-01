@@ -1,0 +1,100 @@
+body {
+  background: green;
+}
+
+.wrapper{
+  position: relative;
+  top: 300px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.nuvem {
+  position: absolute;
+  width: 100%;
+  background: rgb(135, 215, 235);
+  height: 340px;
+  top: 0;
+  left: 0;
+}
+
+.nuvem img{
+  margin-left: -200px;
+  animation: nuvem 30s ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  width: 350px;
+}
+
+.nuvem img:nth-child(1){
+  position: absolute;
+  top: 100px;
+  width: 300px;
+  animation: nuvem 40s ease-in;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 0.8;
+}
+
+
+@keyframes nuvem {
+  from {
+    transform: translateX(-550px);
+  }
+  to {
+    transform: translateX(1600px);
+    /* transform: rotateY(1000deg); */
+  }
+}
+
+.mario {
+  position: relative;
+  /* padding: 20px; */
+  animation: drive 5s ease-in-out, jump 1.2s ease;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.luigi {
+  position: relative;
+  top: -40px;
+  animation: drive 5s ease-in, jump 2s;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.lines {
+  box-sizing: border-box;
+  /* border: 5px dashed #fff; */
+  background-color: white;
+  height: 10px;
+  width: 104%;
+  margin-left: -26px;
+}
+
+@keyframes drive {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(1600px);
+  }
+}
+
+@keyframes jump {
+  0%{
+    top: -10px
+  }
+  50%{
+    top: -20px
+  }
+  100%{
+    top: -10px
+  }
+}

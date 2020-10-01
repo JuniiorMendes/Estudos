@@ -1,0 +1,22 @@
+body {
+  padding: 0;
+  margin: 0;
+  /* text-align: center; */
+}
+
+.btn button{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn {
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  background: yellow;
+  text-align: center;
+  margin-top: 200px;
+}

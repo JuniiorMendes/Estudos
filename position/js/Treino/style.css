@@ -1,0 +1,55 @@
+body, html, p, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.estrutura {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-areas: 
+    "header header header"
+    "aside aside main"
+    "footer footer footer"
+  ;
+}
+
+/* HEADER */
+
+.header {
+  background: cyan;
+  grid-area: header;
+  display: grid;
+  align-items: center;
+}
+
+.header {
+
+}
+
+.header ul {
+  display: flex;
+}
+
+.main {
+  background: blue;
+  grid-area: main;
+}
+
+.aside {
+  background: chartreuse;
+  grid-area: aside;
+}
+
+footer {
+  background-color: chocolate;
+  grid-area: footer;
+}

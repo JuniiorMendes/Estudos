@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <h1>Drop Down</h1>
+    <ul class="main">
+        <li class="sub">
+          <a href="">ITEM 1</a>
+          <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+          </ul>
+        </li>
+        <li>
+          <a href="">ITEM 2</a>
+          <ul class="sub">
+            <li>d</li>
+            <li>e</li>
+            <li>f</li>
+          </ul>
+        </li>
+        <li>
+          <a href="">ITEM 3</a>
+          <ul class="sub">
+            <li>g</li>
+            <li>h</li>
+            <li>i</li>
+          </ul>
+        </li>
+    </ul>
+  </nav>
+  <script src="/jquery.js"></script>
+  <script>
+      $('.main').hover(function(){
+        $('ul.sub', this).slideDown(500)
+      }),
+      function(){
+        $('ul.sub', this).slideUp(300)
+      }
+  </script>
+</body>
+</html>
